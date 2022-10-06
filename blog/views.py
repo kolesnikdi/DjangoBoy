@@ -1,7 +1,8 @@
-from .models import Post
-from .forms import PostForm
 from django.shortcuts import get_object_or_404, render, redirect
 from django.utils import timezone
+
+from blog.models import Post
+from blog.forms import PostForm
 
 
 def post_list(request):
